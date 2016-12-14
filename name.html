@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Keywords</title>  
+    <link href="./keywords/keywords.css" rel="stylesheet" type="text/css" />  
+    <script type="text/javascript" src="./keywords/keywords.js"></script>
+</head>
+<body id="keywords" style="width:140; height:210">
+     <span id="main">
+	   <input type="button" name="begin" value="begin" onclick="loadNextQuestion()" /><br>
+	   <input type="hidden" id="keyword"/>
+	 </span>
+	 <span>
+	   Options: 
+		<p id="options"></p>
+		<div id="panelInfo" onclick="hidePanelInfo()"; >
+			<p id="lembrete"></p>
+		</div>
+		<img id="true"  src="./images/thumbup.png"   alt="certo"   onclick=evaluate("true")>
+		<img id="false" src="./images/thumbdown.png" alt="errado"  onclick=evaluate("false")>
+		<div id="panelCounter" >
+			<p id="counterRight"></p>
+		</div>
+	 </span>
+</body>
+</html>
